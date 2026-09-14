@@ -1,0 +1,29 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+.img-produto {
+    height: 180px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #ffc107 !important;
+    outline-offset: 2px;
+}
+
+.display-none {
+    display: none;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}

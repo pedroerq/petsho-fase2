@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop Real Pet - Fase 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Navegação Principal">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🐾 Real Pet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agendamento">Agendamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-primary text-white text-center py-2" id="barra-horario" aria-live="polite">
+        <span>Carregando horário de atendimento...</span>
+    </div>
+
+    <section id="destaques" class="my-3 container">
+        <div id="carrosselPetshop" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosselPetshop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Promoção de Banho"></button>
+                <button type="button" data-bs-target="#carrosselPetshop" data-bs-slide-to="1" aria-label="Slide 2: Rações com Desconto"></button>
+            </div>
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/900x300/2b580c/ffffff?text=Banho+e+Tosa+com+Tele-busca" class="d-block w-100" alt="Audiodescrição: Fotografia promocional mostrando um cachorro limpo e feliz após o serviço de Banho e Tosa no Petshop Real Pet.">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Banho & Tosa Especial</h5>
+                        <p>Buscamos e entregamos seu pet com todo o conforto e segurança!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/900x300/639a67/ffffff?text=Rações+e+Acessorios+em+Oferta" class="d-block w-100" alt="Audiodescrição: Banner com diversas rações de cães e gatos em promoção na loja do Petshop Real Pet.">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Linha Premium de Rações</h5>
+                        <p>Descontos de até 20% para clientes cadastrados.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPetshop" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselPetshop" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <main class="container my-5" id="produtos">
+        <h2 class="text-center mb-4 border-bottom pb-2">Catálogo de Produtos</h2>
+
+        <h3 id="acessorios" class="h4 text-secondary mt-4">Acessórios</h3>
+        <div class="row g-4 mb-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="cama.png" class="card-img-top img-produto" alt="Audiodescrição: Cama nuvem bege circular e felpuda para cães e gatos de pequeno porte.">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title h5">1. Cama Nuvem Pet</h4>
+                        <p class="card-text">Cama super macia para o conforto do seu pet.</p>
+                        <p class="fw-bold text-success mt-auto">Valor: R$ 129,90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="coleira.png" class="card-img-top img-produto" alt="Audiodescrição: Coleira e guia ajustável de fita resistente para passeios com cães.">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title h5">2. Guia e Coleira</h4>
+                        <p class="card-text">Guia resistente para passear com seu cachorro.</p>
+                        <p class="fw-bold text-success mt-auto">Valor: R$ 59,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="racoes" class="h4 text-secondary mt-4">Rações Não Perecíveis</h3>
+        <div class="row g-4 mb-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="racao.png" class="card-img-top img-produto" alt="Audiodescrição: Embalagem de ração seca de 15 quilos para cães adultos de porte médio e grande.">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title h5">1. Ração Cães Adultos 15kg</h4>
+                        <p class="card-text">Ração seca para cães de médio e grande porte.</p>
+                        <p class="fw-bold text-success mt-auto">Valor: R$ 189,90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="racaogato.png" class="card-img-top img-produto" alt="Audiodescrição: Saco de ração seca de 3 quilos com fórmula especial para gatos castrados.">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title h5">2. Ração Gatos Castrados 3kg</h4>
+                        <p class="card-text">Ração seca para gatos castrados.</p>
+                        <p class="fw-bold text-success mt-auto">Valor: R$ 74,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="higiene" class="h4 text-secondary mt-4">Higiene e Limpeza</h3>
+        <div class="row g-4 mb-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="tapete.jpg" class="card-img-top img-produto" alt="Audiodescrição: Pacote de tapetes higiênicos descartáveis com 30 unidades para cães.">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title h5">1. Tapete Higiênico (30 un)</h4>
+                        <p class="card-text">Tapete com alta absorção para xixi de cães.</p>
+                        <p class="fw-bold text-success mt-auto">Valor: R$ 89,90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="fralda.jpg" class="card-img-top img-produto" alt="Audiodescrição: Pacote contendo 12 unidades de fralda descartável anatômica para pets.">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title h5">2. Fralda Descartável Pet (12 un)</h4>
+                        <p class="card-text">Fraldas para pets machos ou fêmeas.</p>
+                        <p class="fw-bold text-success mt-auto">Valor: R$ 42,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container my-5" id="servicos">
+        <h2 class="text-center mb-4 border-bottom pb-2">Serviços Oferecidos</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle border">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Serviço</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Tele-busca</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">Banho e Tosa Simples</td>
+                        <td>Banho, secagem, corte de unhas e tosa higiênica.</td>
+                        <td><span class="badge bg-secondary">Não</span></td>
+                        <td class="fw-bold text-primary">R$ 60,00</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Banho e Tosa Completo</td>
+                        <td>Banho completo, tosa geral e buscamos/entregamos o pet em sua casa.</td>
+                        <td><span class="badge bg-success">Sim</span></td>
+                        <td class="fw-bold text-primary">R$ 100,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container my-5 bg-light p-4 rounded shadow-sm" id="cadastro">
+        <h2 class="text-center mb-4 text-primary">Cadastro do Cliente e Pet</h2>
+        <form id="form-cadastro" class="row g-3">
+            
+            <h3 class="h5 text-dark border-bottom pb-2">Dados do Cliente</h3>
+            
+            <div class="col-md-6">
+                <label for="nomeCliente" class="form-label">Nome Completo:*</label>
+                <input type="text" class="form-control" id="nomeCliente" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="cpfCliente" class="form-label">CPF:*</label>
+                <input type="text" class="form-control" id="cpfCliente" placeholder="000.000.000-00" required>
+            </div>
+
+            <div class="col-md-8">
+                <label for="enderecoCliente" class="form-label">Endereço Completo:*</label>
+                <input type="text" class="form-control" id="enderecoCliente" placeholder="Rua, Número, Bairro, Cidade" required>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label d-block">Sexo:*</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexoCliente" id="sexoM" value="Masculino" required>
+                    <label class="form-check-label" for="sexoM">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexoCliente" id="sexoF" value="Feminino">
+                    <label class="form-check-label" for="sexoF">Feminino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexoCliente" id="sexoO" value="Outro">
+                    <label class="form-check-label" for="sexoO">Outro</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="telefoneCliente" class="form-label">Telefone / WhatsApp:*</label>
+                <input type="tel" class="form-control" id="telefoneCliente" placeholder="(00) 90000-0000" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="emailCliente" class="form-label">E-mail:*</label>
+                <input type="email" class="form-control" id="emailCliente" placeholder="seuemail@dominio.com" required>
+            </div>
+
+            <h3 class="h5 text-dark border-bottom pb-2 mt-4">Dados do Pet</h3>
+
+            <div class="col-md-4">
+                <label for="nomePet" class="form-label">Nome do Pet:*</label>
+                <input type="text" class="form-control" id="nomePet" placeholder="Ex: Rex, Mel" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="racaPet" class="form-label">Raça:*</label>
+                <input type="text" class="form-control" id="racaPet" placeholder="Ex: Poodle, Vira-lata" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="idadePet" class="form-label">Idade (anos):*</label>
+                <input type="number" class="form-control" id="idadePet" min="0" max="30" placeholder="Ex: 3" required>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="aceitaNovidades" checked>
+                    <label class="form-check-label" for="aceitaNovidades">
+                        Desejo receber promoções e lembretes de vacinas por e-mail/WhatsApp.
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg px-5">Cadastrar Cliente e Pet</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="container my-5 bg-white p-4 rounded shadow border" id="agendamento">
+        <h2 class="text-center mb-4 text-success">Agendamento de Serviço</h2>
+        <form id="form-agendamento" class="row g-3">
+            
+            <div class="col-md-6">
+                <label for="servicoSelecionado" class="form-label">Selecione o Serviço:*</label>
+                <select class="form-select" id="servicoSelecionado" required>
+                    <option value="" selected disabled>Escolha o serviço...</option>
+                    <option value="Banho e Tosa Simples (R$ 60,00)">Banho e Tosa Simples - R$ 60,00</option>
+                    <option value="Banho e Tosa Completo (R$ 100,00)">Banho e Tosa Completo - R$ 100,00</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="metodoEntrega" class="form-label">Modalidade:*</label>
+                <select class="form-select" id="metodoEntrega" required>
+                    <option value="" selected disabled>Escolha a modalidade...</option>
+                    <option value="Entrega no local pelo cliente">Entrega do Pet no local</option>
+                    <option value="Tele-busca do Petshop">Tele-busca (Buscamos em casa)</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="dataAgendamento" class="form-label">Data do Agendamento:*</label>
+                <input type="date" class="form-control" id="dataAgendamento" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="horaAgendamento" class="form-label">Horário:*</label>
+                <input type="time" class="form-control" id="horaAgendamento" required>
+            </div>
+
+            <div class="col-12">
+                <label for="obsAgendamento" class="form-label">Observações sobre o Pet:</label>
+                <textarea class="form-control" id="obsAgendamento" rows="2" placeholder="Algum cuidado especial, alergia ou comportamento?"></textarea>
+            </div>
+
+            <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-success btn-lg px-5">Confirmar Agendamento</button>
+            </div>
+        </form>
+
+        <div id="mensagem-agendamento" class="mt-4 display-none"></div>
+    </section>
+
+    <footer class="bg-dark text-white pt-4 pb-3 mt-5" id="contato">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-uppercase text-primary">Petshop Real Pet</h5>
+                    <p><b>Endereço:</b> Rua dos Animais, nº 123 - Centro</p>
+                    <p><b>Telefone:</b> (11) 99999-8888</p>
+                    <p><b>E-mail:</b> contato@petshop.com</p>
+                </div>
+                <div class="col-md-6 mb-3 text-md-end">
+                    <h5 class="text-uppercase text-secondary">Sobre o Projeto</h5>
+                    <p>Desenvolvimento Web - Fase 2</p>
+                    <p>Desenvolvido por: <b>Pedro Enrique</b></p>
+                    <p>Todos os direitos reservados &copy; 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
